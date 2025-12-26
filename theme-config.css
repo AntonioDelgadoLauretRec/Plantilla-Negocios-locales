@@ -1,0 +1,178 @@
+/**
+ * ============================================
+ * THEME CONFIGURATION - DESIGN TOKENS
+ * ============================================
+ * 
+ * 🎯 PERSONALIZACIÓN FÁCIL: Cambia estos valores para adaptar 
+ * el diseño a cualquier marca o nicho de negocio.
+ * 
+ * Todos los colores, tipografías y espaciados están centralizados
+ * aquí para modificación en un solo lugar.
+ */
+
+:root {
+  /* ========================================
+     COLORES PRIMARIOS - Identidad de Marca
+     ======================================== */
+  --color-primary: #2563eb;        /* Azul principal - CTA y elementos clave */
+  --color-primary-dark: #1e40af;   /* Hover y estados activos */
+  --color-primary-light: #dbeafe;  /* Fondos sutiles */
+  
+  --color-secondary: #7c3aed;      /* Violeta - Acentos */
+  --color-secondary-dark: #5b21b6;
+  --color-secondary-light: #ede9fe;
+  
+  /* ========================================
+     COLORES NEUTROS - Estructura Visual
+     ======================================== */
+  --color-dark: #1f2937;           /* Textos principales */
+  --color-dark-light: #374151;     /* Textos secundarios */
+  --color-gray: #6b7280;           /* Textos auxiliares */
+  --color-gray-light: #d1d5db;     /* Bordes */
+  --color-gray-lighter: #f3f4f6;   /* Fondos sutiles */
+  --color-white: #ffffff;
+  
+  /* ========================================
+     COLORES DE ESTADO - Feedback UX
+     ======================================== */
+  --color-success: #10b981;        /* Confirmaciones */
+  --color-warning: #f59e0b;        /* Advertencias */
+  --color-error: #ef4444;          /* Errores */
+  --color-info: #3b82f6;           /* Información */
+  
+  /* ========================================
+     TIPOGRAFÍA - Sistema de Fuentes
+     ======================================== */
+  --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-heading: 'Poppins', var(--font-primary);
+  
+  /* Tamaños de Fuente - Escala Modular */
+  --font-size-xs: 0.75rem;    /* 12px */
+  --font-size-sm: 0.875rem;   /* 14px */
+  --font-size-base: 1rem;     /* 16px */
+  --font-size-lg: 1.125rem;   /* 18px */
+  --font-size-xl: 1.25rem;    /* 20px */
+  --font-size-2xl: 1.5rem;    /* 24px */
+  --font-size-3xl: 1.875rem;  /* 30px */
+  --font-size-4xl: 2.25rem;   /* 36px */
+  --font-size-5xl: 3rem;      /* 48px */
+  
+  /* Peso de Fuentes */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  
+  /* Altura de Línea */
+  --line-height-tight: 1.25;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.75;
+  
+  /* ========================================
+     ESPACIADO - Sistema de 8px Grid
+     ======================================== */
+  --spacing-xs: 0.25rem;   /* 4px */
+  --spacing-sm: 0.5rem;    /* 8px */
+  --spacing-md: 1rem;      /* 16px */
+  --spacing-lg: 1.5rem;    /* 24px */
+  --spacing-xl: 2rem;      /* 32px */
+  --spacing-2xl: 3rem;     /* 48px */
+  --spacing-3xl: 4rem;     /* 64px */
+  --spacing-4xl: 6rem;     /* 96px */
+  --spacing-5xl: 8rem;     /* 128px */
+  
+  /* ========================================
+     BORDES Y SOMBRAS - Depth System
+     ======================================== */
+  --border-radius-sm: 0.25rem;   /* 4px */
+  --border-radius-md: 0.5rem;    /* 8px */
+  --border-radius-lg: 0.75rem;   /* 12px */
+  --border-radius-xl: 1rem;      /* 16px */
+  --border-radius-full: 9999px;  /* Circular */
+  
+  --border-width: 1px;
+  --border-width-md: 2px;
+  --border-width-lg: 4px;
+  
+  /* Sombras - Elevación */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  
+  /* ========================================
+     TRANSICIONES - Animaciones
+     ======================================== */
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-base: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 350ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+  /* ========================================
+     CONTENEDOR - Layout
+     ======================================== */
+  --container-max-width: 1280px;
+  --container-padding: var(--spacing-md);
+  
+  /* ========================================
+     Z-INDEX - Jerarquía Visual
+     ======================================== */
+  --z-base: 1;
+  --z-dropdown: 100;
+  --z-sticky: 200;
+  --z-fixed: 300;
+  --z-modal: 400;
+  --z-overlay: 500;
+  --z-tooltip: 600;
+}
+
+/**
+ * ============================================
+ * TEMAS PREDEFINIDOS (Opcionales)
+ * ============================================
+ * Descomentar para activar temas alternativos
+ */
+
+/* TEMA CORPORATIVO ELEGANTE */
+/*
+:root {
+  --color-primary: #0f172a;
+  --color-secondary: #64748b;
+  --color-accent: #f97316;
+}
+*/
+
+/* TEMA TECNOLOGÍA/STARTUP */
+/*
+:root {
+  --color-primary: #06b6d4;
+  --color-secondary: #8b5cf6;
+  --color-accent: #ec4899;
+}
+*/
+
+/* TEMA SALUD/WELLNESS */
+/*
+:root {
+  --color-primary: #059669;
+  --color-secondary: #84cc16;
+  --color-accent: #14b8a6;
+}
+*/
+
+/* TEMA RESTAURANTE/FOOD */
+/*
+:root {
+  --color-primary: #dc2626;
+  --color-secondary: #f59e0b;
+  --color-accent: #fbbf24;
+}
+*/
+
+/* TEMA LEGAL/PROFESIONAL */
+/*
+:root {
+  --color-primary: #1e3a8a;
+  --color-secondary: #475569;
+  --color-accent: #b45309;
+}
+*/

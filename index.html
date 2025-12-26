@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- ============================================
+       META TAGS Y CONFIGURACIÓN BÁSICA
+       ============================================ -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <!-- 🔧 PERSONALIZAR: Información SEO -->
+  <title>Tu Negocio | Soluciones Profesionales</title>
+  <meta name="description" content="Descripción breve y atractiva de tu negocio. Incluye palabras clave relevantes para SEO.">
+  <meta name="keywords" content="palabra clave 1, palabra clave 2, palabra clave 3">
+  <meta name="author" content="Nombre de tu empresa">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://tudominio.com/">
+  <meta property="og:title" content="Tu Negocio | Soluciones Profesionales">
+  <meta property="og:description" content="Descripción para redes sociales">
+  <meta property="og:image" content="https://tudominio.com/images/og-image.jpg">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://tudominio.com/">
+  <meta property="twitter:title" content="Tu Negocio | Soluciones Profesionales">
+  <meta property="twitter:description" content="Descripción para Twitter">
+  <meta property="twitter:image" content="https://tudominio.com/images/twitter-image.jpg">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  
+  <!-- ============================================
+       FUENTES TIPOGRÁFICAS
+       ============================================ -->
+  <!-- Google Fonts - Personalizar según marca -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  
+  <!-- ============================================
+       HOJAS DE ESTILO
+       ============================================ -->
+  <link rel="stylesheet" href="theme-config.css">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+  
+  <!-- ============================================
+       HEADER / NAVIGATION
+       ============================================ -->
+  <header class="header" role="banner">
+    <div class="header__container container">
+      
+      <!-- 🔧 PERSONALIZAR: Logo y nombre de la empresa -->
+      <a href="#home" class="header__logo" aria-label="Inicio">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="currentColor" aria-hidden="true">
+          <!-- Ícono de ejemplo - reemplazar con tu logo -->
+          <rect x="6" y="6" width="20" height="20" rx="4" fill="currentColor"/>
+        </svg>
+        <span>TuNegocio</span>
+      </a>
+      
+      <!-- Navegación principal -->
+      <nav class="header__nav" role="navigation" aria-label="Navegación principal">
+        <ul class="header__menu">
+          <li class="header__menu-item">
+            <a href="#home" class="header__menu-link">Inicio</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="#services" class="header__menu-link">Servicios</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="#about" class="header__menu-link">Nosotros</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="#testimonials" class="header__menu-link">Testimonios</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="#contact" class="header__menu-link">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+      
+      <!-- Toggle menú móvil -->
+      <button class="header__toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu">
+        <span class="header__toggle-icon"></span>
+      </button>
+      
+    </div>
+  </header>
+  
+  <!-- ============================================
+       MAIN CONTENT
+       ============================================ -->
+  <main role="main">
+    
+    <!-- ============================================
+         SECCIÓN: HERO
+         ============================================ -->
+    <section id="home" class="hero section">
+      <div class="hero__container container">
+        
+        <div class="hero__content">
+          <!-- 🔧 PERSONALIZAR: Texto principal de tu negocio -->
+          <span class="hero__eyebrow">Bienvenido a TuNegocio</span>
+          
+          <h1 class="hero__title">
+            Transforma Tu Visión en Realidad
+          </h1>
+          
+          <p class="hero__description">
+            Soluciones profesionales diseñadas para impulsar tu éxito. 
+            Trabajamos contigo para alcanzar resultados excepcionales.
+          </p>
+          
+          <div class="hero__cta">
+            <a href="#contact" class="btn btn--primary btn--large">
+              Comenzar Ahora
+            </a>
+            <a href="#services" class="btn btn--secondary btn--large">
+              Ver Servicios
+            </a>
+          </div>
+        </div>
+        
+        <div class="hero__image">
+          <!-- 🔧 PERSONALIZAR: Imagen destacada (opcional) -->
+          <!-- Puedes usar imágenes de Unsplash, Pexels o tu propia imagen -->
+          <img 
+            src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&auto=format&fit=crop" 
+            alt="Equipo profesional trabajando en proyectos innovadores"
+            loading="lazy"
+          >
+        </div>
+        
+      </div>
+    </section>
+    
+    <!-- ============================================
+         SECCIÓN: SERVICIOS
+         ============================================ -->
+    <section id="services" class="services section">
+      <div class="container">
+        
+        <header class="section__header">
+          <!-- 🔧 PERSONALIZAR: Título y descripción de servicios -->
+          <span class="section__subtitle">Nuestros Servicios</span>
+          <h2 class="section__title">¿Qué Podemos Hacer Por Ti?</h2>
+          <p class="section__description">
+            Ofrecemos soluciones completas y personalizadas para cada necesidad de tu negocio
+          </p>
+        </header>
+        
+        <!-- Grid de servicios -->
+        <div class="services__grid">
+          
+          <!-- 🔧 PERSONALIZAR: Servicio 1 -->
+          <article class="service-card fade-in-up">
+            <div class="service-card__icon" aria-hidden="true">
+              <!-- Emoji o ícono SVG -->
+              🚀
+            </div>
+            <h3 class="service-card__title">Consultoría Estratégica</h3>
+            <p class="service-card__description">
+              Análisis profundo de tu negocio para identificar oportunidades de crecimiento 
+              y desarrollar estrategias efectivas que impulsen tus resultados.
+            </p>
+          </article>
+          
+          <!-- 🔧 PERSONALIZAR: Servicio 2 -->
+          <article class="service-card fade-in-up">
+            <div class="service-card__icon" aria-hidden="true">
+              💡
+            </div>
+            <h3 class="service-card__title">Soluciones Innovadoras</h3>
+            <p class="service-card__description">
+              Implementación de tecnologías y metodologías de vanguardia para optimizar 
+              tus procesos y mantenerte competitivo en el mercado.
+            </p>
+          </article>
+          
+          <!-- 🔧 PERSONALIZAR: Servicio 3 -->
+          <article class="service-card fade-in-up">
+            <div class="service-card__icon" aria-hidden="true">
+              🎯
+            </div>
+            <h3 class="service-card__title">Marketing Digital</h3>
+            <p class="service-card__description">
+              Estrategias de marketing personalizadas que conectan tu marca con tu audiencia 
+              ideal y generan resultados medibles y sostenibles.
+            </p>
+          </article>
+          
+          <!-- 🔧 PERSONALIZAR: Servicio 4 (opcional) -->
+          <article class="service-card fade-in-up">
+            <div class="service-card__icon" aria-hidden="true">
+              📊
+            </div>
+            <h3 class="service-card__title">Análisis de Datos</h3>
+            <p class="service-card__description">
+              Transformamos datos en insights accionables que te permiten tomar 
+              decisiones informadas y maximizar tu ROI.
+            </p>
+          </article>
+          
+          <!-- 🔧 PERSONALIZAR: Servicio 5 (opcional) -->
+          <article class="service-card fade-in-up">
+            <div class="service-card__icon" aria-hidden="true">
+              ⚙️
+            </div>
+            <h3 class="service-card__title">Automatización</h3>
+            <p class="service-card__description">
+              Automatiza tareas repetitivas y libera tiempo valioso para enfocarte 
+              en lo que realmente importa: hacer crecer tu negocio.
+            </p>
+          </article>
+          
+          <!-- 🔧 PERSONALIZAR: Servicio 6 (opcional) -->
+          <article class="service-card fade-in-up">
+            <div class="service-card__icon" aria-hidden="true">
+              🛡️
+            </div>
+            <h3 class="service-card__title">Soporte Continuo</h3>
+            <p class="service-card__description">
+              Acompañamiento constante y soporte técnico especializado para garantizar 
+              el éxito continuo de tus proyectos e iniciativas.
+            </p>
+          </article>
+          
+        </div>
+        
+      </div>
+    </section>
+    
+    <!-- ============================================
+         SECCIÓN: SOBRE NOSOTROS
+         ============================================ -->
+    <section id="about" class="about section section--light">
+      <div class="about__container container">
+        
+        <div class="about__content fade-in-up">
+          <!-- 🔧 PERSONALIZAR: Historia y valores de la empresa -->
+          <span class="section__subtitle">Sobre Nosotros</span>
+          <h2 class="about__title">
+            Construyendo el Futuro Juntos
+          </h2>
+          
+          <p class="about__text">
+            Somos un equipo de profesionales apasionados por la innovación y el éxito 
+            de nuestros clientes. Con años de experiencia en la industria, hemos ayudado 
+            a decenas de empresas a transformarse digitalmente y alcanzar sus objetivos.
+          </p>
+          
+          <p class="about__text">
+            Nuestra misión es proporcionar soluciones de clase mundial que no solo cumplan 
+            con tus expectativas, sino que las superen. Creemos en el poder de la colaboración 
+            y en construir relaciones duraderas basadas en la confianza y los resultados.
+          </p>
+          
+          <!-- Lista de características -->
+          <ul class="about__features">
+            <li class="about__feature">
+              <span class="about__feature-icon" aria-hidden="true">✓</span>
+              <p class="about__feature-text">
+                Más de 10 años de experiencia en el sector
+              </p>
+            </li>
+            <li class="about__feature">
+              <span class="about__feature-icon" aria-hidden="true">✓</span>
+              <p class="about__feature-text">
+                100+ proyectos exitosos completados
+              </p>
+            </li>
+            <li class="about__feature">
+              <span class="about__feature-icon" aria-hidden="true">✓</span>
+              <p class="about__feature-text">
+                Equipo certificado y altamente calificado
+              </p>
+            </li>
+            <li class="about__feature">
+              <span class="about__feature-icon" aria-hidden="true">✓</span>
+              <p class="about__feature-text">
+                Soporte 24/7 para todos nuestros clientes
+              </p>
+            </li>
+          </ul>
+          
+          <a href="#contact" class="btn btn--primary">
+            Trabajemos Juntos
+          </a>
+        </div>
+        
+        <div class="about__image fade-in-up">
+          <!-- 🔧 PERSONALIZAR: Imagen del equipo o de la oficina -->
+          <img 
+            src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&auto=format&fit=crop" 
+            alt="Nuestro equipo colaborando en proyectos innovadores"
+            loading="lazy"
+          >
+        </div>
+        
+      </div>
+    </section>
+    
+    <!-- ============================================
+         SECCIÓN: TESTIMONIOS
+         ============================================ -->
+    <section id="testimonials" class="testimonials section">
+      <div class="container">
+        
+        <header class="section__header">
+          <!-- 🔧 PERSONALIZAR: Título de testimonios -->
+          <span class="section__subtitle">Testimonios</span>
+          <h2 class="section__title">Lo Que Dicen Nuestros Clientes</h2>
+          <p class="section__description">
+            La satisfacción de nuestros clientes es nuestra mejor carta de presentación
+          </p>
+        </header>
+        
+        <div class="testimonials__grid">
+          
+          <!-- 🔧 PERSONALIZAR: Testimonio 1 -->
+          <article class="testimonial-card fade-in-up">
+            <blockquote class="testimonial-card__quote">
+              "Trabajar con este equipo ha sido una experiencia transformadora para nuestro 
+              negocio. Su profesionalismo y dedicación son incomparables."
+            </blockquote>
+            
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar">
+                <!-- 🔧 Imagen del cliente (opcional) -->
+                <img 
+                  src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&auto=format&fit=crop" 
+                  alt="María González"
+                  loading="lazy"
+                >
+              </div>
+              <div class="testimonial-card__info">
+                <p class="testimonial-card__name">María González</p>
+                <p class="testimonial-card__role">CEO, Empresa ABC</p>
+                <div class="testimonial-card__rating" aria-label="Calificación: 5 de 5 estrellas">
+                  ⭐⭐⭐⭐⭐
+                </div>
+              </div>
+            </div>
+          </article>
+          
+          <!-- 🔧 PERSONALIZAR: Testimonio 2 -->
+          <article class="testimonial-card fade-in-up">
+            <blockquote class="testimonial-card__quote">
+              "Los resultados superaron nuestras expectativas. Su enfoque estratégico 
+              y atención al detalle marcaron la diferencia en nuestro proyecto."
+            </blockquote>
+            
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar">
+                <img 
+                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&auto=format&fit=crop" 
+                  alt="Carlos Rodríguez"
+                  loading="lazy"
+                >
+              </div>
+              <div class="testimonial-card__info">
+                <p class="testimonial-card__name">Carlos Rodríguez</p>
+                <p class="testimonial-card__role">Director, Tech Solutions</p>
+                <div class="testimonial-card__rating" aria-label="Calificación: 5 de 5 estrellas">
+                  ⭐⭐⭐⭐⭐
+                </div>
+              </div>
+            </div>
+          </article>
+          
+          <!-- 🔧 PERSONALIZAR: Testimonio 3 -->
+          <article class="testimonial-card fade-in-up">
+            <blockquote class="testimonial-card__quote">
+              "Un equipo excepcional que realmente se preocupa por el éxito de sus clientes. 
+              Los recomiendo sin dudarlo."
+            </blockquote>
+            
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar">
+                <img 
+                  src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&auto=format&fit=crop" 
+                  alt="Ana Martínez"
+                  loading="lazy"
+                >
+              </div>
+              <div class="testimonial-card__info">
+                <p class="testimonial-card__name">Ana Martínez</p>
+                <p class="testimonial-card__role">Fundadora, Startup XYZ</p>
+                <div class="testimonial-card__rating" aria-label="Calificación: 5 de 5 estrellas">
+                  ⭐⭐⭐⭐⭐
+                </div>
+              </div>
+            </div>
+          </article>
+          
+        </div>
+        
+      </div>
+    </section>
+    
+    <!-- ============================================
+         SECCIÓN: CONTACTO
+         ============================================ -->
+    <section id="contact" class="contact section">
+      <div class="contact__container container">
+        
+        <!-- Formulario de contacto -->
+        <div class="contact__form-wrapper">
+          <header class="section__header">
+            <!-- 🔧 PERSONALIZAR: Título de contacto -->
+            <span class="section__subtitle">Contacto</span>
+            <h2 class="section__title">¿Listo Para Comenzar?</h2>
+            <p class="section__description">
+              Completa el formulario y nos pondremos en contacto contigo lo antes posible
+            </p>
+          </header>
+          
+          <form class="contact__form" id="contactForm" novalidate>
+            
+            <div class="form__group">
+              <label for="name" class="form__label">
+                Nombre Completo *
+              </label>
+              <input 
+                type="text" 
+                id="name" 
+                name="name" 
+                class="form__input"
+                placeholder="Juan Pérez"
+                required
+                aria-required="true"
+              >
+            </div>
+            
+            <div class="form__group">
+              <label for="email" class="form__label">
+                Email *
+              </label>
+              <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                class="form__input"
+                placeholder="juan@ejemplo.com"
+                required
+                aria-required="true"
+              >
+            </div>
+            
+            <div class="form__group">
+              <label for="phone" class="form__label">
+                Teléfono
+              </label>
+              <input 
+                type="tel" 
+                id="phone" 
+                name="phone" 
+                class="form__input"
+                placeholder="+34 600 000 000"
+              >
+            </div>
+            
+            <div class="form__group">
+              <label for="subject" class="form__label">
+                Asunto *
+              </label>
+              <input 
+                type="text" 
+                id="subject" 
+                name="subject" 
+                class="form__input"
+                placeholder="¿En qué podemos ayudarte?"
+                required
+                aria-required="true"
+              >
+            </div>
+            
+            <div class="form__group">
+              <label for="message" class="form__label">
+                Mensaje *
+              </label>
+              <textarea 
+                id="message" 
+                name="message" 
+                class="form__textarea"
+                placeholder="Cuéntanos sobre tu proyecto..."
+                required
+                aria-required="true"
+              ></textarea>
+            </div>
+            
+            <button type="submit" class="btn btn--primary form__button">
+              Enviar Mensaje
+            </button>
+            
+            <!-- Mensaje de respuesta -->
+            <div class="form__message" role="alert" aria-live="polite"></div>
+            
+          </form>
+        </div>
+        
+        <!-- Información de contacto -->
+        <div class="contact__info fade-in-up">
+          
+          <!-- 🔧 PERSONALIZAR: Información de contacto -->
+          <div class="contact__info-item">
+            <div class="contact__info-icon" aria-hidden="true">
+              📍
+            </div>
+            <div class="contact__info-content">
+              <h3>Dirección</h3>
+              <p>Calle Principal 123<br>28001 Madrid, España</p>
+            </div>
+          </div>
+          
+          <div class="contact__info-item">
+            <div class="contact__info-icon" aria-hidden="true">
+              📧
+            </div>
+            <div class="contact__info-content">
+              <h3>Email</h3>
+              <p>
+                <a href="mailto:info@tunegocio.com" style="color: inherit;">
+                  info@tunegocio.com
+                </a>
+              </p>
+            </div>
+          </div>
+          
+          <div class="contact__info-item">
+            <div class="contact__info-icon" aria-hidden="true">
+              📱
+            </div>
+            <div class="contact__info-content">
+              <h3>Teléfono</h3>
+              <p>
+                <a href="tel:+34600000000" style="color: inherit;">
+                  +34 600 000 000
+                </a>
+              </p>
+            </div>
+          </div>
+          
+          <div class="contact__info-item">
+            <div class="contact__info-icon" aria-hidden="true">
+              ⏰
+            </div>
+            <div class="contact__info-content">
+              <h3>Horario</h3>
+              <p>Lunes - Viernes: 9:00 - 18:00<br>Sábados: 10:00 - 14:00</p>
+            </div>
+          </div>
+          
+        </div>
+        
+      </div>
+    </section>
+    
+  </main>
+  
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer__container container">
+      
+      <!-- Información de la empresa -->
+      <div class="footer__brand">
+        <!-- 🔧 PERSONALIZAR: Logo y descripción del footer -->
+        <h3 class="footer__logo">TuNegocio</h3>
+        <p class="footer__tagline">
+          Transformando ideas en realidad desde 2015
+        </p>
+        
+        <!-- Redes sociales -->
+        <div class="footer__social">
+          <!-- 🔧 PERSONALIZAR: Enlaces a redes sociales -->
+          <a href="https://facebook.com" class="footer__social-link" aria-label="Facebook" target="_blank" rel="noopener">
+            <svg width="20" height="20" fill="currentColor" aria-hidden="true">
+              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
+            </svg>
+          </a>
+          <a href="https://twitter.com" class="footer__social-link" aria-label="Twitter" target="_blank" rel="noopener">
+            <svg width="20" height="20" fill="currentColor" aria-hidden="true">
+              <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
+            </svg>
+          </a>
+          <a href="https://linkedin.com" class="footer__social-link" aria-label="LinkedIn" target="_blank" rel="noopener">
+            <svg width="20" height="20" fill="currentColor" aria-hidden="true">
+              <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/>
+              <circle cx="4" cy="4" r="2"/>
+            </svg>
+          </a>
+          <a href="https://instagram.com" class="footer__social-link" aria-label="Instagram" target="_blank" rel="noopener">
+            <svg width="20" height="20" fill="currentColor" aria-hidden="true">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+      
+      <!-- Enlaces rápidos -->
+      <div class="footer__links">
+        <h4 class="footer__title">Enlaces Rápidos</h4>
+        <ul class="footer__list">
+          <li class="footer__list-item">
+            <a href="#home" class="footer__list-link">Inicio</a>
+          </li>
+          <li class="footer__list-item">
+            <a href="#services" class="footer__list-link">Servicios</a>
+          </li>
+          <li class="footer__list-item">
+            <a href="#about" class="footer__list-link">Nosotros</a>
+          </li>
+          <li class="footer__list-item">
+            <a href="#contact" class="footer__list-link">Contacto</a>
+          </li>
+        </ul>
+      </div>
+      
+      <!-- Servicios -->
+      <div class="footer__links">
+        <h4 class="footer__title">Servicios</h4>
+        <ul class="footer__list">
+          <!-- 🔧 PERSONALIZAR: Lista de servicios -->
+          <li class="footer__list-item">
+            <a href="#" class="footer__list-link">Consultoría</a>
+          </li>
+          <li class="footer__list-item">
+            <a href="#" class="footer__list-link">Desarrollo</a>
+          </li>
+          <li class="footer__list-item">
+            <a href="#" class="footer__list-link">Marketing</a>
+          </li>
+          <li class="footer__list-item">
+            <a href="#" class="footer__list-link">Soporte</a>
+          </li>
+        </ul>
+      </div>
+      
+      <!-- Legal -->
+      <div class="footer__links">
+        <h4 class="footer__title">Legal</h4>
+        <ul class="footer__list">
+          <!-- 🔧 PERSONALIZAR: Enlaces legales -->
+          <li class="footer__list-item">
+            <a href="#" class="footer__list-link">Privacidad</a>
+          </li>
+          <li class="footer__list-item">
+            <a href="#" class="footer__list-link">Términos</a>
+          </li>
+          <li class="footer__list-item">
+            <a href="#" class="footer__list-link">Cookies</a>
+          </li>
+          <li class="footer__list-item">
+            <a href="#" class="footer__list-link">Legal</a>
+          </li>
+        </ul>
+      </div>
+      
+    </div>
+    
+    <!-- Copyright -->
+    <div class="footer__bottom">
+      <div class="container">
+        <p class="footer__copyright">
+          &copy; <span id="currentYear"></span> TuNegocio. Todos los derechos reservados.
+        </p>
+      </div>
+    </div>
+    
+  </footer>
+  
+  <!-- ============================================
+       SCRIPTS
+       ============================================ -->
+  <script src="main.js"></script>
+  
+  <!-- Script para año dinámico -->
+  <script>
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+  </script>
+  
+  <!-- 🔧 OPCIONAL: Google Analytics -->
+  <!--
+  <script async src="https://www.googletagmanager.com/gtag/js?id=TU-ID-AQUI"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'TU-ID-AQUI');
+  </script>
+  -->
+  
+</body>
+</html>
